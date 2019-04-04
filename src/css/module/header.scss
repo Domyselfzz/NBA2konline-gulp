@@ -1,0 +1,148 @@
+header{
+    width: 1192px;
+    height: 190px;
+    margin: 0 auto;
+}
+.mainnav{
+    width: 100%;
+    height: 30px;
+    ul{
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        height: 100%;
+        li{
+            padding: 0 11px;
+            border-right: 1px solid #e8ebf1;
+            span{color: #666666; }
+            a{
+                color: #666666;
+                &:hover{text-decoration: underline;}
+            }
+        }
+        li:last-child{border: none;}
+    }
+    ul:nth-of-type(1) {
+        float: left;
+        li:first-child{
+            padding-left: 0;
+        }
+        .icon-phone{
+            display: inline-block;
+            width: 11px;
+            height: 15px;
+            background: url(/images/icon.png) no-repeat;
+            margin-right: 3px;
+            position: relative;
+            top: 3px;
+        }
+    }
+    ul:nth-of-type(2) {
+        float: right;
+        #loading{display: none;}
+		li:nth-of-type(4){
+			.gt1{
+				margin-left: 10px;
+				display: inline-block;
+				width: 8px;
+				height: 8px;
+				background: url(/images/gt1.png) no-repeat 0px 2px;
+			}
+		}
+		li:last-child{
+			height: 22px;
+			line-height: 100%;
+			background: url(/images/dhang.png) no-repeat 11px 1px;
+			display: flex;
+			align-items: center;
+			padding-left: 20px;
+			padding-right: 23px
+		}
+    }
+    
+}
+header{
+    .search{
+        display: flex;
+        width: 100%;
+        height: 108px;
+        .logo1{
+            width: 300px;
+            height: 58px;
+            margin-top: 27px;
+            background: url(/images/navico.png) no-repeat -319px -3px;
+        }
+		.s-text{
+			display: flex;
+			width: 490px;
+			height: 34px;
+			margin: 30px 0 0 118px;
+			border: 2px solid #f55656;
+			input{
+				width: 450px;
+				height: 100%;
+				color: #aaa8a8;
+				background-color: #5a3612;
+				border: none;
+				box-sizing: border-box;
+				padding-left: 16px;
+				outline: none;
+				&:hover{
+					color: #ffffff;;
+				}
+			}
+			button{
+				border: none;
+				flex: 1;
+				background: #f74a4a url(/images/navico.png) no-repeat -1034px 8px;
+				outline: none;
+				cursor: pointer;
+			}
+		}
+		.logo2{
+			width: 136px;
+			height: 52px;
+			margin-left: 128px;
+			margin-top: 25px;
+			background: url(/images/logo.png) no-repeat;
+		}
+    }
+	.navwrap{
+		width: 100%;
+		height: 52px;
+		display: flex;
+		justify-content: space-between;
+		.nav-left{
+			display: flex;
+			li{
+				color: #acb1bb;
+				height: 52px;
+				line-height: 52px;
+				padding:0 44px; 
+				&:hover{color: white;}
+			}
+			.sy{
+				background: #eb4c4c;
+				color: white;
+				padding: 0 60px;
+			}
+	}
+	.nav-r{
+		width: 188px;
+		height: 100%;
+		line-height: 52px;
+		color: #f74a4a;
+		text-align: center;
+		position: relative;
+		cursor: pointer;
+		.c-logo{
+			width: 28px;
+			height: 24px;
+			background: url(/images/navico.png) no-repeat -236px -5px;
+			position: absolute;
+			top: 13px;
+			left: 24px;
+		}
+	}
+}
+}

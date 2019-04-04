@@ -1,0 +1,99 @@
+.foot-area{
+	min-width: 1280px;
+	background: #3b3f4a;
+	height: 355px;
+	a:hover{
+		text-decoration: underline;
+	}
+	.f-content{
+		color: #acb1bb;
+		width: 1177px;
+		height: 150px;
+		background: #3b3f4a;
+		margin: 0 auto;
+		display: flex;
+		padding-top: 25px;
+		padding-bottom: 33px;
+		.f-list{
+			height: 152px;
+			padding-left: 24px;
+			padding-right:80px;
+			border-right: 1px solid #444853;
+		}
+		.f-list1{
+			padding-left:0px;
+		}
+		.f-list5{
+			display: flex;
+			padding-left: 52px;
+			.ewm1{
+				margin-right: 40px;
+			}
+			.ewm img{
+				margin-bottom: 18px;
+			}
+		}
+		a{
+			color: #acb1bb;
+			font-size: 12px;
+		}
+		h4{
+			box-sizing: border-box;
+			padding-left: 9px;
+			font-size: 15px;
+			font-weight: normal;
+			margin-bottom: 10px;
+			i{
+			display: inline-block;
+			width:32px;
+			height: 33px;
+			position: relative;
+			top: 10px;
+			left:-8px;
+			margin-right: 3px;
+			background: url(/images/icon.png) no-repeat;
+			}
+		}
+		
+		.xshou{
+			background-position: 0 -135px;
+		}
+		.person{
+			background-position:  -32px -135px;
+		}
+		.pay-way{
+			background-position: -63px -135px;
+		}
+		.online-service{
+			background-position: -95px -135px;
+		}
+		ul{
+			padding-left: 42px;
+			li{
+				margin-bottom: 4px;
+			}
+			li:last-child{
+				margin: 0;
+			}
+		}
+	}
+	.foot-bottom{
+		height: 146px;
+		width: 100%;
+		background: #3b3f4a;
+		border-top: 1px solid #444853;
+		font-size: 12px;
+		box-sizing: border-box;
+		padding-top: 33px;
+		.bottom-wrap{
+			text-align: center;
+			color:#81858f;
+			a{
+				color:#81858f;
+			}
+			p{
+				margin-bottom: 8px;
+			}
+		}
+	}
+}

@@ -1,0 +1,35 @@
+<script type="text/html" id="shop-list">
+    <div class="goods-container">
+    {{each list item}}
+<dl>
+    <dt>
+        <a href="/html/detail.html?id={{ item.id }}" target="_blank">
+            <img src="{{ item.img }}" width="190" height="135">
+        </a>
+        <div class="pop-tips">
+            <span class="arrowbr">◆</span>
+            <span class="arrow">◆</span>
+            <strong title="{{ item.title }}">{{ item.title }}</strong>
+            <p>{{ item.type }}</p>
+            <p>{{ item.desc }}</p>
+        </div>
+    </dt>
+    <dd>
+        <a href="" class="djname" target="_blank" title="{{ item.type }}">
+            <strong>{{ item.title }}({{ item.type }}）</strong>
+        </a>
+        <div class="bxlist-t1">
+            Q币价：<span class="t2 fwb">&nbsp;&nbsp;&nbsp;{{ item.qprice }}</span> <span class="t2 fwb">Q币</span>
+        </div>
+        <div class="bxlist-t1">
+            微信价：<span class="t2 fwb">&nbsp;&nbsp;&nbsp;¥</span><span class="t2 fwb">{{ item.wprice }}</span>
+        </div>
+                            <div class="bxlist-t2 c">
+            <a href="" data-seqid="3576" class="btn-red buy-now" title="立即购买">立即购买</a>
+        </div>
+        <span class=""></span>
+    </dd>
+</dl>
+{{ /each }}
+</div>
+</script>

@@ -1,0 +1,56 @@
+.toprank-wrap{
+    box-sizing: border-box;
+    padding: 0 15px;
+    h3{
+        height: 47px;
+        line-height: 47px;
+        width: 100%;
+        color: #3a3f4a;
+        font-size: 15px;
+        border-bottom: 3px solid #f3f4f6;
+        span{
+            float: left;
+            width: 80px;
+            height: 100%;
+            text-align: center;
+            border-bottom: 3px solid #36ab87;
+        }
+    }
+    .rank-wrap{
+        dl{
+            cursor: pointer;
+            display: flex;
+            font-size: 12px;
+            padding: 7px 0 15px 0;
+            border-bottom: 1px dashed #e2e2e2;
+            position: relative;
+            .gt1{
+                width: 20px;
+                height: 24px;
+                position: absolute;
+                top: 7px;
+                left: 0px;
+                background: url(/images/comico.png) no-repeat -5px -592px;
+            }
+            dt{
+                margin-right: 8px;
+                img{
+                    width: 77px;
+                    height: 54px;
+                }
+                
+            }
+            dd{
+                h4{
+                    margin-bottom: 3px;
+                }
+                a{
+                    color: #3a3f4a;
+                }
+                p{
+                    margin-bottom: 3px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+.fixed-nav{
+    width: 70px;
+    height: 102px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    a{
+        color: #3a3f4a;
+        text-align: center;
+        width: 68px;
+        border: 1px solid #e1e1e1;
+        display: block;
+        background: white;
+        &:hover{
+            background: #36ab87;
+            color: white;
+            border: none;
+        }
+    }
+    a:first-child{
+        width: 70px;
+        height: 64px;
+        box-sizing: border-box;
+        padding-top: 13px;
+        &:hover i{
+            background-position: -163px -160px;
+        } 
+        i{
+            display: block;
+            height: 16px;
+            width: 30px;
+            margin: 0 auto;
+            margin-bottom: 11px;
+            background: url(/images/bg.png) no-repeat -122px -160px;
+        }
+    }
+    a:last-child{
+        height: 32px;
+        line-height: 32px;
+    }
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 2000;
+    margin: 0 20px 215px 0;
+}
