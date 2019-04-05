@@ -13,7 +13,7 @@ define(["jquery"],function($){
             })
         }
         login(){
-            console.log("header引入成功！");
+            // console.log("header引入成功！");
             //搜索框光标获取焦点和失去焦点事件
             $("#search-text").focus(function(){
                 $("#search-text").val("");

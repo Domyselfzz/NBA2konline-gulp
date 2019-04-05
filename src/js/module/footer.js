@@ -13,7 +13,7 @@ define(["jquery"],function($){
 	         })
 	     }
 	     login(){
-	         console.log("footer引入成功！");
+	        //  console.log("footer引入成功！");
 	     }
 	 }
 	return new Footer(); 

@@ -25,11 +25,156 @@ footer{clear: both;}
             float: left;
             width: 232px;
             height: 100%;
+            .loginbox{
+                font-size: 12px;
+                height: 238px;
+                width: 100%;
+                box-sizing: border-box;
+                padding: 19px 14px 20px;
+                a{color: #1994eb;}
+                .up{
+                    height: 70px;
+                    width: 100%;
+                    color: #999999;
+                    img{
+                        width: 47px;
+                        height: 49px;
+                    }
+                    span{
+                        float: right;
+                    }
+                }
+                .mid{
+                    height: 66px;
+                    width: 100%;
+                    background: #f3f4f6;
+                    color: #3a3f4a;
+                    box-sizing: border-box;
+                    padding: 12px 10px 0;
+                    p:last-child{
+                        margin-top: 17px;
+                        text-align: right;
+                    }
+                    }
+                .mid2{
+                        height: 84px;
+                        width: 100%;
+                        p{
+                            line-height: 26px;
+                            i{
+                                position: relative;
+                                left: 0px;
+                                top: 4px;
+                                margin-right: 12px;
+                                display: inline-block;
+                                width: 15px;
+                                height: 15px;
+                                background: url(/images/actico.png) no-repeat;
+                            }
+                            &:hover a{
+                                color: #f74a4a;
+                                text-decoration: underline;
+                            }
+                            
+                        }
+                        p:nth-child(1){
+                            i{
+                                background-position: 0 -368px;
+                            }
+                            &:hover i{
+                                background-position: 0 -352px;
+                            }
+                        }
+                        p:nth-child(2){
+                            i{
+                                top:3px;
+                                background-position: -1px -261px;
+                            }
+                            &:hover i{
+                                background-position: -20px -261px;
+                            }
+                        }
+                        a{
+                            color:#3a3f4a; 
+                        }
+                    }
+                .bott{
+                    h3{
+                        height: 25px;
+                        border-bottom: 1px solid #ececec;
+                        color: #3a3f4a;
+                        a{
+                            float: right;
+                            font-size: 12px;
+                            font-weight: normal;
+                        }
+                    }
+                    ul{
+                        li{line-height: 23px;}
+                        a{
+                            color: #3a3f4a;
+                            float: left;
+                            width: 155px;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                        span{
+                            float: right;
+                            color: #8e8e8e;
+                        }
+                    }
+                }
+            }
         }
         .ban-right{
             float: right;
             width: 190px;
             height: 100%;
+            div.br2{
+                width: 100%;
+                height: 72px;
+                border-bottom: 1px solid #ebebeb;
+                font-size: 18px;
+                color: #3a3f4a;
+                cursor: pointer;
+                &:hover{color: #f74a4a;}
+                p{
+                    height: 72px;
+                    line-height: 72px;
+                    box-sizing: border-box;
+                    padding: 0 26px;
+                    i{
+                        display: inline-block;
+                        height: 25px;
+                        width: 23px;
+                        position: relative;
+                        top:7px;
+                        left:0px;
+                        margin-right: 20px;
+                        background: url(/images/actico.png) no-repeat;
+                    }
+                }
+            }
+            .act{
+                p i{ background-position: -51px -163px !important;}
+                &:hover p i{
+                    background-position: -81px -163px !important;
+                }
+            } 
+            .spa{
+                 p i{ background-position: -111px -163px !important;}
+                 &:hover p i{
+                     background-position: -143px -163px !important;
+                 }
+            }
+            .phone-ewm{
+                padding: 22px 17px 0;
+            }
+           
         }
         .bp{
             background: white;
@@ -119,7 +264,7 @@ footer{clear: both;}
         }
         .h-right{
             width: 228px;
-            height: 100%;
+            height: 703px;
             background: white;
             float: right;
         }

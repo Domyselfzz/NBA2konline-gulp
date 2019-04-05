@@ -28,6 +28,8 @@
                 width: 20px;
                 height: 24px;
                 position: absolute;
+                color: white;
+                text-align: center;
                 top: 7px;
                 left: 0px;
                 background: url(/images/comico.png) no-repeat -5px -592px;
@@ -41,8 +43,15 @@
                 
             }
             dd{
+                .wp{
+                    font-weight: 600;
+                }
                 h4{
                     margin-bottom: 3px;
+                    width: 106px;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
                 }
                 a{
                     color: #3a3f4a;
@@ -50,6 +59,10 @@
                 p{
                     margin-bottom: 3px;
                 }
+            }
+            &:hover a{
+                 text-decoration: underline;
+                 color: #f21c1c;           
             }
         }
     }

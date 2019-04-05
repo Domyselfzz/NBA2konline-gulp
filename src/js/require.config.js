@@ -9,6 +9,7 @@ require.config({
         "Swiper" : "libs/swiper/js/swiper",
         "shopItem" : "js/module/shopItem",
         "url" : "js/module/url",
-        "Toprank" : "js/module/top-rank"
+        "toprank" : "js/module/top-rank",
+        "notice" : "js/module/notice"
     }
 })

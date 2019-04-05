@@ -15,7 +15,33 @@
         <header  id="header-container"></header>
         <!-- 登录栏和广告区 -->
         <div class="banner-box">
-            <div class="bp ban-left"></div>
+            <!-- 登录栏 -->
+            <div class="bp ban-left">
+                <div class="loginbox">
+                    <div class="up">
+                        <img src="/images/default.gif" alt="">
+                        <span>你还未登录哦,<a href="javascript:;">立即登录</a><br>购买超值商品!</span>
+                    </div>
+                    <div class="mid">
+                        <p>当前未绑定角色</p>
+                        <p><a href="javascript:;">立即绑定&gt;</a></p>
+                    </div>
+                    <div class="mid2">
+                        <p><a href="javascript:;"><i></i>我的优惠券</a></p>
+                        <p><a href="javascript:;"><i></i>查询Q币Q点余额</a></p>
+                    </div>
+                    <div class="bott">
+                        <h3>公告<a href="javascript:;">更多&gt;</a></h3>
+                        <div id="notice-container"></div>
+                        <!-- <ul>
+                            <li><a href="javascript:;">才能激活农村纪念册</a> <span>03/26</span></li>
+                            <li><a href="javascript:;">才能激活农村纪念册vdnvvjkdnvnvndsdnvnd</a> <span>03/26</span></li>
+                            <li><a href="javascript:;">才能激活农村纪念册</a> <span>03/26</span></li>
+                            <li><a href="javascript:;">才能激活农村纪念册</a> <span>03/26</span></li>
+                        </ul> -->
+                    </div>
+                </div>
+            </div>
             <div class="banner-wrap">
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
@@ -24,10 +50,16 @@
                         <div class="swiper-slide"><img src="/images/banner3.jpg" alt=""></div>
                     </div>
                     <!-- 如果需要分页器 -->
-                    <div class="swiper-pagination"></div>
+                    <div class="swiper-pagination" id="sw-pg"></div>
                 </div>
             </div>
-            <div class="bp ban-right"></div>
+            <div class="bp ban-right">
+                <div class="act br2"><p><i></i>活动中心</p></div>
+                <div class="spa br2"><p><i></i>聚豆商城</p></div>
+                <div class="phone-ewm">
+                    <img src="/images/ewm-b.png" alt="">
+                </div>
+            </div>
         </div>
         <!-- 热卖区 -->
         <div class="hotbox">
@@ -43,30 +75,10 @@
                     
                 </div>
             </div>
-            <!-- 右侧热门排行 -->
-            <div class="h-right">
-                <div class="toprank-wrap">
-                    <h3><span>热门排行</span></h3>
-                <div class="rank-wrap">
-                    <dl>
-                        <span class="gt1">01</span>
-                        <dt><img src="/images/top1.jpg" alt=""></dt>
-                        <dd>
-                            <h4><a href="javascript:;">特训卡</a></h4>
-                            <p>
-                                Q币价:&nbsp;&nbsp;
-                                <span>5.00</span>
-                                &nbsp;&nbsp;Q币
-                            </p>
-                            <p>
-                                微信价:
-                                <span class="wp"></span>&nbsp;&nbsp;&nbsp;￥</span>
-                                <span class="wp">18.81</span>
-                            </p>
-                        </dd>
-                    </dl>
-                </div>
-                </div>
+        <!-- 右侧热门排行 -->
+            <div class="h-right" id="toprankContainer">
+                    <!-- template模板 -->
+                
             </div>
         </div>
             <!-- 精彩活动 -->

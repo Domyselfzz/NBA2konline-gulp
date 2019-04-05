@@ -34,7 +34,7 @@ define(["jquery","template"],($,template) =>{
             $(".buy-now").each(function(){
                 $(this).on("mouseover",function(){
                     // console.log("jclkasc");
-                    $(this).css("background-color","#df3232");
+                    $(this).css("background-color","#ce2828");
                      
                     // $(this).attr("style","background:#df3232");
                 })

@@ -1,21 +1,25 @@
 require(["require.config"],function(){
-    require(["jquery","template","Swiper","shopItem","url","Toprank","footer","header","fixednav"],function($,template,Swiper,ShopItem,url){
+    require(["jquery","template","Swiper","shopItem","url","toprank","notice","footer","header","fixednav"],function($,template,Swiper,ShopItem,url,Toprank,Notice){
         class Index{
             constructor(){
 				
 				this.init();
-				this.list();
+				
 			}
 			init(){
 				this.swiper();
-				
+				this.list();
+				this.toprank();
+				this.notice();
 			}
             swiper () {
 				var mySwiper = new Swiper ('.swiper-container', {
 					// direction: 'vertical', // 垂直切换选项
 					loop: true, // 循环模式选项
 					//自动播放
-					autoplay:true,
+					autoplay:{
+						delay: 2000,
+					},
 					
 					// 如果需要分页器
 					pagination: {
@@ -38,13 +42,21 @@ require(["require.config"],function(){
 				}
 				mySwiper.el.onmouseleave = function(){
 					mySwiper.autoplay.start();
-				} 
+				}
 			}
 			list (){
 				//请求热卖数据
 				// console.log(url);
 				// console.log(ShopItem);
 				new ShopItem($("#hotListContainer"),url.baseUrl + "hotgoods");
+			}
+			toprank(){
+				// 请求热门排行数据
+				// console.log($("#toprankContainer"));
+				new Toprank($("#toprankContainer"),url.baseUrl + "toprank");
+			}
+			notice(){
+				new Notice($("#notice-container"),url.baseUrl + "noticelist");
 			}
         }
         new Index();

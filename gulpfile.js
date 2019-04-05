@@ -70,7 +70,7 @@ gulp.task("watch", () => {
   gulp.watch("src/**/*.html", ["html"]);
   gulp.watch("src/js/**/*.js", ["js"]);
   gulp.watch("src/css/**/*.scss", ["css"]);
-
+  // gulp.watch("src/images/*.gif",["images"]);
 })
 
 

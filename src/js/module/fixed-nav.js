@@ -13,7 +13,10 @@ define(["jquery"],function($){
             })
         }
         login(){
-            console.log("fixed-nav引入成功！");
+            // console.log("fixed-nav引入成功！");
+            $("#b-top").on("click",function(){
+                window.scrollTo(0,0);
+            })
         }
     }
     return new Fixednav();
