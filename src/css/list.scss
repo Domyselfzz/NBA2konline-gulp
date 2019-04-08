@@ -83,6 +83,11 @@ main{
             .toprank-c{
                 background: white;
                 padding-bottom: 12px;
+                dl:hover{
+                    .wxin{
+                        color: #f21c1c;    
+                    }
+                }
                 .toprank-wrap h3 span{
                     border: none;
                 }
@@ -133,6 +138,7 @@ main{
                             display: inline-block;
                         }
                         li{
+                            cursor: pointer;
                             float: left;
                             margin-right: 36px;
                             &:hover{

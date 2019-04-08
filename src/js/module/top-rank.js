@@ -23,6 +23,7 @@ define(["jquery","template"],($,template) => {
             //请求列表数据
             // console.log(this);
             $.get(this.url, res => {
+                this.res = res;
                 if(res.res_code === 1){
                     // console.log(res.res_body.list);
                     this.render (res.res_body.list);

@@ -1,0 +1,68 @@
+@import "module/style" ;
+@import "module/header" ;
+@import "module/footer";
+@import "module/fixed-nav";
+@import "module/top-rank";
+// 头部--搜索框
+.headwrap{
+    width: 100%;
+   background:  #f3f4f6 url(/images/bg-index.jpg) no-repeat top center;
+   min-height: 190px;
+   .contwrap{
+    min-height: 190px;
+    margin: 0 auto;
+    background: #f3f4f6 url(/images/cont-index.jpg) no-repeat;
+    background-size: 100%;
+    width: 1192px;
+    header .search{
+        position: relative;
+        z-index: 5;
+        background: url(/images/search.jpg) no-repeat center;
+    }
+    .search-bg{
+        height: 108px;
+        width: 100%;
+        position: absolute;
+        top: 30px;
+        left: 0;
+        z-index: 1;
+        background: url(/images/bg-search.jpg) no-repeat center;
+    }
+    }
+}
+// 主体内容
+main{
+    height: 650px;
+    width: 100%;
+    background: #f3f4f6;
+    .pos-nav{
+        height: 60px;
+        line-height: 60px;
+        width: 1190px;
+        margin: 0 auto;
+        font-size: 12px;
+    }
+    .m-wrap{
+        width: 1190px;
+        min-height: 560px;
+        margin: 0 auto;
+        .w-left{
+            width: 230px;
+            min-height: 353px;
+            background: white;
+            float: left;
+            padding-bottom: 12px;
+            dl:hover{
+                .wxin{
+                    color: #f21c1c;    
+                }
+            }
+        }
+        .w-right{
+            width: 950px;
+            min-height: 560px;
+            float: right;
+            background: white;
+        }
+    }
+}

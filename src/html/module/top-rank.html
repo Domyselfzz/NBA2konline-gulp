@@ -1,6 +1,6 @@
 <script type="text/html" id="rank-list">
 <div class="toprank-wrap">
-    <h3><span>热门排行</span></h3>
+    <h3><span id="rm-title">热门排行</span></h3>
 <div class="rank-wrap">
     {{each list item}}
     <dl>
@@ -13,7 +13,7 @@
                 <span>{{ item.qprice }}</span>
                 Q币
             </p>
-            <p>
+            <p class="wxin">
                 微信价:
                 <span class="wp"></span>&nbsp;&nbsp;&nbsp;￥</span>
                 <span class="wp">{{ item.wprice }}</span>
