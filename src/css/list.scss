@@ -1,0 +1,165 @@
+@import "module/style" ;
+@import "module/header" ;
+@import "module/footer";
+@import "module/fixed-nav";
+@import "module/top-rank";
+@import "module/shopItem";
+.headwrap{
+    width: 100%;
+   background:  #f3f4f6 url(/images/bg-index.jpg) no-repeat top center;
+   min-height: 190px;
+   .contwrap{
+    min-height: 190px;
+    margin: 0 auto;
+    background: #f3f4f6 url(/images/cont-index.jpg) no-repeat;
+    background-size: 100%;
+    width: 1192px;
+    .listnav{
+        background: #eb4c4c;
+        color: white;
+    }
+    header .search{
+        position: relative;
+        z-index: 5;
+        background: url(/images/search.jpg) no-repeat center;
+    }
+    .search-bg{
+        height: 108px;
+        width: 100%;
+        position: absolute;
+        top: 30px;
+        left: 0;
+        z-index: 1;
+        background: url(/images/bg-search.jpg) no-repeat center;
+    }
+    }
+}
+main{
+    padding-top: 25px;
+    min-height: 1656px;
+    width: 100%;
+    background: #f3f4f6;
+    .m-wrap{
+        width: 1190px;
+        min-height: 1600px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        .w-left{
+            color: #3a3f4a;
+            width: 230px;
+            min-height: 1300px;
+            .goods-caty{
+                width: 100%;
+                height: 330px;
+                p{
+                    font-size: 12px;
+                    margin-bottom: 12px;
+                }
+                ul li{
+                    background: white;
+                    font-size: 13px;
+                    height: 40px;
+                    line-height: 40px;
+                    box-sizing: border-box;
+                    padding-left: 17px;
+                    border-bottom: 1px dashed #e7e7e7;
+                    cursor: pointer;
+                    &:hover{
+                        color: #eb4c4c;
+                    }
+                }
+                .f1{
+                    cursor: auto;
+                    height: 48px;
+                    line-height: 48px;
+                    font-size: 16px;
+                    border-bottom: 1px solid #e7e7e7;
+                    &:hover{
+                        color: #3a3f4a;
+                    }
+                }
+            }
+            .toprank-c{
+                background: white;
+                padding-bottom: 12px;
+                .toprank-wrap h3 span{
+                    border: none;
+                }
+            }
+        }
+        .w-right{
+            width: 948px;
+            min-height: 1600px;
+            padding-top: 28px;
+            .r-top{
+                height: 106px;
+                width: 100%;
+                background: white;
+                margin-bottom: 10px;
+                box-sizing: border-box;
+                padding-top: 18px;
+                padding-left: 15px;
+                font-size: 12px;
+                .t1{
+                    input{
+                        height: 24px;
+                        border: 1px solid #cccccc;
+                        outline: none;
+                    }
+                    input:nth-of-type(1){
+                        width: 343px;
+                        margin-right: 20px;
+                    }
+                    input:nth-of-type(2),input:nth-of-type(3){
+                        width: 38px;
+                    }
+                    button{
+                        height: 24px;
+                        width: 44px;
+                        margin-left: 10px;
+                        background: #f5f5f5;
+                        border: 1px solid #cccccc;
+                        outline: none;
+                    }
+                }
+                .t2{
+                    ul {
+                        margin-top: 30px;
+                        .t2-gt{
+                            width: 9px;
+                            height: 7px;
+                            background: url(/images/comico.png) no-repeat;
+                            display: inline-block;
+                        }
+                        li{
+                            float: left;
+                            margin-right: 36px;
+                            &:hover{
+                                color: #eb4c4c;
+                            }
+                        }
+                        li:nth-child(2) i{
+                            margin-left: 3px;
+                            background-position: -25px -71px;
+                        }
+                        li:nth-child(3) i{
+                            margin-left: 3px;
+                            background-position: -40px -71px;
+                        }
+                    }
+                    
+                    
+                }
+            }
+            .goodslist{
+                height: 1484px;
+                width: 100%;
+                background: white;
+                .goods-container dl{
+                    width: 236px;
+                }
+            }
+        }
+    }
+}

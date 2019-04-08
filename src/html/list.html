@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品列表页</title>
+    <link rel="stylesheet" href="/css/list.css">
+</head>
+<body>
+    <div class="headwrap">
+        <div class="contwrap">
+        <!-- 头部 -->
+        <div class="search-bg"></div>
+        <header  id="header-container"></header>
+        </div>
+    </div>
+    <main>
+        <div class="m-wrap">
+            <div class="w-left">
+                <div class="goods-caty">
+                    <p>您现在的位置：<span>NBA2KOL</span>&gt;<span>全部分类</span></p>
+                    <ul>
+                        <li class="f1">商品分类</li>
+                        <li>服装</li>
+                        <li>限时促销</li>
+                        <li>游戏道具</li>
+                        <li>功能道具</li>
+                        <li>动作包</li>
+                        <li>球员</li>
+                    </ul>
+                </div>
+                 <!-- 左侧热门排行 -->
+                 <div class="toprank-c" id="toprankContainer">
+                        <!-- template模板 -->
+                </div>
+            </div>
+            <div class="w-right">
+                <div class="r-top">
+                    <div class="t1">
+                        关键字：<input type="text"> 
+                        价格区间（QB）：<input type="text">- <input type="text">
+                        <button>确定</button>
+                    </div>
+                    <div class="t2">
+                        <ul>
+                            <li>上架时间</li>
+                            <li>销量<i class="t2-gt"></i></li>
+                            <li>价格<i class="t2-gt"></i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="goodslist" id="hotListContainer">
+                        <!-- template模板 -->
+                        
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- 固定定位nav -->
+    <div id="fixednav-container"></div>
+    <!-- 底部 -->
+	<footer id="footer-container"></footer>
+    <script src="/libs/requirejs/require.js"  data-main="/js/list.js"></script>
+</body>
+</html>
