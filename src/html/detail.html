@@ -34,16 +34,16 @@
                         <span class="collect" title="收藏商品"> <i></i> 收藏商品</span>
                     </dt>
                     <dd>
-                        <h3>{{ title }}</h3>
+                        <h3 id="stitle">{{ title }}</h3>
                         <div class="goods-bg">
-                            <p>Q币价： {{ qprice }}&nbsp;Q币</p>
-                            <p>微信价： <span>￥{{ wprice }}</span></p>
+                            <p>Q币价：<span id="qprice">{{ qprice }}</span> &nbsp;Q币</p>
+                            <p>微信价： <span>￥<span id="wprice">{{ wprice }}</span></span></p>
                         </div>
                         <div class="numBox">
                             数量：
                             <span>
                                 <a href="javascript:;" class="minus">-</a>
-                                <input type="text" value="1">
+                                <input type="text" value="1" id="num">
                                 <a href="javascript:;" class="plus">+</a>
                             </span>
                             &nbsp;
@@ -56,7 +56,7 @@
                                 <i></i>
                             </span>
                         </div>
-                        <button>
+                        <button id="cart">
                             加入购物车
                         </button>
                     </dd>

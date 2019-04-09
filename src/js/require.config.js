@@ -10,6 +10,7 @@ require.config({
         "shopItem" : "js/module/shopItem",
         "url" : "js/module/url",
         "toprank" : "js/module/top-rank",
-        "notice" : "js/module/notice"
+        "notice" : "js/module/notice",
+        "history" : "js/module/history"
     }
 })
