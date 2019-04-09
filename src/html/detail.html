@@ -20,14 +20,61 @@
         <p class="pos-nav">您现在的位置：<span>NBA2KOL</span>&gt;<span>全部商品</span>&gt;<span>道具详情</span></p>
         <div class="m-wrap">
             <div class="w-left">
-                 <!-- 左侧热门排行 -->
+                 <!-- 左侧浏览历史 -->
                 <div class="history" id="historyContainer">
                         <!-- template模板 -->
                 </div>
             </div>
-            <div class="w-right">
-                
-                
+            <div class="w-right" id="detail-container">
+                <!-- template模板 -->
+                <script type="text/html" id="detail-list">
+                    <dl>
+                    <dt>
+                        <img src="{{ img }}" alt="">
+                        <span class="collect" title="收藏商品"> <i></i> 收藏商品</span>
+                    </dt>
+                    <dd>
+                        <h3>{{ title }}</h3>
+                        <div class="goods-bg">
+                            <p>Q币价： {{ qprice }}&nbsp;Q币</p>
+                            <p>微信价： <span>￥{{ wprice }}</span></p>
+                        </div>
+                        <div class="numBox">
+                            数量：
+                            <span>
+                                <a href="javascript:;" class="minus">-</a>
+                                <input type="text" value="1">
+                                <a href="javascript:;" class="plus">+</a>
+                            </span>
+                            &nbsp;
+                            件
+                        </div>
+                        <div class="tp">
+                            使用期限：
+                            <span>
+                                {{ type }}
+                                <i></i>
+                            </span>
+                        </div>
+                        <button>
+                            加入购物车
+                        </button>
+                    </dd>
+                </dl>
+                <!-- ----底部详情框------ -->
+                <div class="r-bott">
+                    <p class="xq-title">
+                        <span>商品详情</span>
+                        <span class="t-bg"></span>
+                        <span>
+                            手机购买<i></i>
+                            <img src="/images/code-index.png" alt="">
+                        </span>
+                    </p>
+                    <p class="desc">{{ desc }}</p>
+                </div>
+            
+            </script>    
             </div>
         </div>
 

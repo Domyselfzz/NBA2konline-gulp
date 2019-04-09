@@ -63,6 +63,195 @@ main{
             min-height: 560px;
             float: right;
             background: white;
+            position: relative;
+            dl{
+                width: 710px;
+                height: 270px;
+                position: absolute;
+                top: 42px;
+                left: 58px;
+                dt{
+                    float: left;
+                    display: flex;
+                    flex-direction: column;
+                    width: 190px;
+                    height: 165px;
+                    justify-content: space-between;
+                    margin-top: 22px;
+                    span{
+                    color: #9f9f9f;
+                    font-size: 12px;
+                    padding-left: 26px;
+                    cursor: pointer;
+                    i{
+                        display: inline-block;
+                        width: 16px;
+                        height: 16px;
+                        background: url(/images/comico.png) no-repeat -5px -527px;
+                        position: relative;
+                        top:5px;
+                        left: 1px;
+                    }
+                    }
+                }
+                dd{
+                    float: right;
+                    width: 456px;
+                    height: 100%;
+                    color: #222222;
+                    .goods-bg{
+                        margin-left: -14px;
+                        overflow: hidden;
+                        width: 456px;
+                        height: 76px;
+                        background: url(/images/bg-price.png) no-repeat;
+                        margin-top: 6px;
+                        p{
+                            font-size: 12px;
+                            line-height: 30px;
+                            margin-left: 14px;
+                            span{
+                                font-size: 18px;
+                                font-weight: 600;
+                                color: #f74a4a;
+                            }
+                        }
+                        p:nth-child(1){
+                            margin-top: 10px;
+                        }
+                    }
+                    .numBox{
+                        margin-top: 24px;
+                        font-size: 12px;
+                        span{
+                            height: 24px;
+                            width: 80px;
+                            background: #f0f0f0;
+                            display: inline-block;
+                            a{
+                                color:#222222;
+                                display: inline-block;
+                                width: 16px;
+                                height: 22px;
+                                text-align: center;
+                                position: relative;
+                                top: -3px;
+                                left: 3px;
+                                &:hover{
+                                    color: #f74a4a;
+                                    border: 1px solid #f74a4a;
+                                }                      
+                            }
+                            a:nth-of-type(2){
+                                left: 0;
+                            }
+                            input{
+                                border: 1px solid #dddddd;
+                                width: 36px;
+                                height: 22px;
+                                outline: none;
+                                text-align: center;
+                            }
+                        }
+                    }
+                    .tp{
+                        margin-top: 25px;
+                        font-size: 12px;
+                        span{
+                            width: 65px;
+                            height: 22px;
+                            line-height: 22px;
+                            border: 1px solid #f74a4a;
+                            text-align: center;
+                            display: inline-block;
+                            position: relative;
+                            cursor: pointer;
+                            i{
+                                width: 14px;
+                                height: 14px;
+                                position: absolute;
+                                background: url(/images/sanjiao.png) no-repeat 2px 2px;
+                                right: 0;
+                                bottom: 0;
+                            }
+                        }
+
+                    }
+                    button{
+                        cursor: pointer;
+                        width: 142px;
+                        height: 42px;
+                        line-height: 42px;
+                        background: #f74a4a;
+                        color: white;
+                        font-size: 18px;
+                        border: none;
+                        outline: none;
+                        margin-top: 16px;
+                        &:hover{
+                            background: #d04343;
+                        }
+                    }
+                }
+            }
+            .r-bott{
+                width: 910px;
+                height: 99px;
+                border: 1px solid #dddddd;
+                position: absolute;
+                bottom: 33px;
+                left: 20px;
+                font-size: 12px;
+                .xq-title{
+                    height: 42px;
+                    line-height: 42px;
+                    padding: 0 10px;
+                    span:nth-of-type(1){
+                        font-size: 13px;
+                        font-weight: 600;
+                        float: left;
+                        cursor: pointer;
+                    }
+                    span:nth-of-type(2){
+                        margin-top: 15px;
+                        width: 705px;
+                        height: 20px;
+                        float: left;
+                        background: url(/images/comico.png) no-repeat 0 -229px;
+                    }
+                    span:nth-of-type(3){
+                        float: right;
+                        position: relative;
+                        padding-right: 54px;
+                        cursor: pointer;
+                        i{
+                            position: absolute;
+                            width: 54px;
+                            height: 30px;
+                            background: url(/images/comico.png) no-repeat 0 -347px;
+                            top: 7px;
+                            right: 0;
+                        }
+                        &:hover i{
+                            background-position: -137px -347px;
+                        }
+                        &:hover img{
+                            display: inline-block;
+                        }
+                    }
+                }
+                .desc{
+                    margin: 36px 0 0 66px;
+                    color: #3a3f4a;
+                }
+                img{
+                    position: absolute;
+                    bottom: -162px;
+                    right: 4px;
+                    width: 170px;
+                    display: none;
+                }
+            }
         }
     }
 }

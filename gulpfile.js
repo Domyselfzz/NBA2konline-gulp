@@ -27,7 +27,7 @@ gulp.task("html", () => {
 })
 
 gulp.task("css", () => {
-  gulp.src("src/css/*.scss")
+  gulp.src("src/css/**/*.scss")
     .pipe(sass())
     .pipe(minifyCss())
     .pipe(gulp.dest("dist/css"))
@@ -70,7 +70,6 @@ gulp.task("watch", () => {
   gulp.watch("src/**/*.html", ["html"]);
   gulp.watch("src/js/**/*.js", ["js"]);
   gulp.watch("src/css/**/*.scss", ["css"]);
-  // gulp.watch("src/images/*.gif",["images"]);
 })
 
 
