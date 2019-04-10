@@ -22,7 +22,10 @@ define(["jquery"],function($){
             $("#search-text").blur(function(){
                 $("#search-text").val("输入道具进行搜索");
               });
-            //根据localStorage显示购物车数量
+            //跳转购物车页面
+            $("#cart").on("click",() =>{
+                location.href = "/html/shopcart.html";
+            })
 
         }
         calcCartNum(){
