@@ -3,8 +3,8 @@
     <h3><span id="rm-title">热门排行</span></h3>
 <div class="rank-wrap">
     {{each list item}}
-    <dl>
-        <span class="gt1">0{{ item.id }}</span>
+    <dl class="list-item" data-id="{{ item.id }}">
+        <span class="gt1">0<span class="item-id">{{ item.id }}</span></span>
         <dt><img src="{{ item.img }}" alt=""></dt>
         <dd>
             <h4><a href="javascript:;">{{ item.title }}&nbsp;({{ item.type }})</a></h4>

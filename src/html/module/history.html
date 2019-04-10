@@ -3,7 +3,7 @@
         <h3>最近浏览过的商品</h3>
     <div class="rank-wrap">
         {{each list item}}
-        <dl>
+        <dl class="list-item" data-id="{{ item.id }}">
             <span class="gt1">0{{ item.id }}</span>
             <dt><img src="{{ item.img }}" alt=""></dt>
             <dd>

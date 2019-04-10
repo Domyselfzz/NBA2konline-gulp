@@ -29,7 +29,16 @@ define(["jquery","template"],($,template) => {
         },
         render : function(data){
             //渲染列表
-            this.container.html(template("history-list",{list: data})); 
+            this.container.html(template("history-list",{list: data}));
+            this.goToDetail(); 
+        },
+        goToDetail : function(){
+            //跳转到详情页
+            $(".list-item").on("click",function(){
+                // console.log(this);
+                let id = $(this).attr("data-id");
+                location.href = "/html/detail.html?id="+id;
+            })
         }
     })
     return History;

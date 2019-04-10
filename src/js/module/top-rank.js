@@ -3,14 +3,11 @@ define(["jquery","template"],($,template) => {
         this.container = container;
         this.url = url;
         this.listData = listData;
-        this.load().then(() =>{
-            this.status = 200;
-        });
+        this.load();
     }
     // jquery提供的用来合并对象的方法
     $.extend(Toprank.prototype,{
         load : function () {
-            return new Promise((resolve,reject) =>{
                 this.container.load("/html/module/top-rank.html",() =>{
                     //判断listData是否有数据
                     if(this.listData) {
@@ -18,10 +15,7 @@ define(["jquery","template"],($,template) => {
                     }else{
                         this.getData();
                     }
-                    //执行Promise成功的回调
-                    resolve();
                 })
-            })
         },
         getData : function() {
             //请求列表数据
@@ -35,7 +29,16 @@ define(["jquery","template"],($,template) => {
         },
         render : function(data){
             //渲染列表
-            this.container.html(template("rank-list",{list: data})); 
+            this.container.html(template("rank-list",{list: data}));
+            this.goToDetail(); 
+        },
+        goToDetail : function(){
+            //跳转到详情页
+            $(".list-item").on("click",function(){
+                // console.log(this);
+                let id = $(this).attr("data-id");
+                location.href = "/html/detail.html?id="+id;
+            })
         }
     })
     return Toprank;
