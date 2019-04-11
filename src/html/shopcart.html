@@ -36,14 +36,13 @@
                 </select>
             </div>
             <h3 class="m-title">商品信息</h3>
-            <div class="table-box" id="table-container">
-                <!-- template模板 -->
-                <script type="text/html" id="cart-list">
+            <div class="table-box" >
+             
                 <table class="m-goods">
                 <thead>
                    <tr>
-                       <th><i class="icon-checked"></i>全选</th>
-                       <th>商品名称</th>
+                       <th style="width:71px;"><i class="icon-checked" id="allcheck"></i>全选</th>
+                       <th style="width:430px;">商品名称</th>
                        <th>类型</th>
                        <th>单价</th>
                        <th>期限</th>
@@ -52,11 +51,13 @@
                        <th>小计</th>
                        <th>操作</th>
                    </tr>
-                   <tbody>
+                   <tbody id="table-container">
+                          <!-- template模板 -->
+                    <script type="text/html" id="cart-list">
                         {{each list item}}
                        <tr>
-                          <td><i class="icon-checked"></i></td>
-                          <td style="text-align:left">
+                          <td style="width:71px;"><i class="icon-checked check"></i></td>
+                          <td style="text-align:left;width:430px;">
                               <a href="">
                                   <img src="{{ item.img }}" alt="" class="s-img">
                               </a>
@@ -78,11 +79,11 @@
                           </td> 
                        </tr>
                        {{ /each }}
-                       
+                    </script>
                    </tbody>
                 </thead>
             </table>
-            </script>
+            <p class="cart-empty">您的购物车还没有道具，赶快去挑选几个吧 <a href="/html/list.html">我要买</a></p>
             </div>
             <h3 class="m-title">您的优惠信息</h3>
             <p class="yhui">优惠券总量：<span>0</span>&nbsp;&nbsp;<a href="javascript:;">如何获得优惠券&gt;&gt;</a></p>
