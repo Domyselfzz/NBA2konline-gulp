@@ -35,11 +35,11 @@ define(["jquery"],function($){
                 cart = JSON.parse(cart);
                 // 第一种显示购物车种类 ，cart.length
                 // 第二种显示总数量
-                this.num = cart.reduce(function (num, prod) {
+                let num = cart.reduce(function (num, prod) {
                 num += prod.num;
                 return num;
                 }, 0);
-                $("#cart-num").html("（"+this.num+"）");
+                $("#cart-num").html("（"+num+"）");
             }
         }
     }

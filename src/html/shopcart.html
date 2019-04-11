@@ -55,7 +55,7 @@
                           <!-- template模板 -->
                     <script type="text/html" id="cart-list">
                         {{each list item}}
-                       <tr>
+                       <tr data-id="{{ item.id }}">
                           <td style="width:71px;"><i class="icon-checked check"></i></td>
                           <td style="text-align:left;width:430px;">
                               <a href="">
@@ -64,18 +64,18 @@
                               <a href=""  class="s-desc">{{ item.title }}({{ item.type }})</a>
                           </td>
                           <td>服装</td>
-                          <td><span>{{ item.qprice }}</span>&nbsp;Q币</td>
+                          <td><span class="price">{{ item.qprice }}</span>&nbsp;Q币</td>
                           <td>{{ item.type }}</td>
                           <td class="t-flex">
                             <a href="javascript:;" class="cart-minus cart-num">-</a>
-                            <input type="text" value="{{ item.num }}">
+                            <input type="text" value="{{ item.num }}" class="numIput">
                             <a href="javascript:;" class="cart-plus cart-num">+</a>
                           </td>
                           <td>无优惠</td>
-                          <td><span>98.00</span>&nbsp;Q币</td>
+                          <td><span class="subtotal">98</span>.00&nbsp;Q币</td>
                           <td>
-                            <a href="javascript:;" class="cz">关注</a>
-                            <a href="javascript:;" class="cz">删除</a>
+                            <a href="javascript:;" class="cz care">关注</a>
+                            <a href="javascript:;" class="cz del">删除</a>
                           </td> 
                        </tr>
                        {{ /each }}
@@ -85,12 +85,16 @@
             </table>
             <p class="cart-empty">您的购物车还没有道具，赶快去挑选几个吧 <a href="/html/list.html">我要买</a></p>
             </div>
+            <div class="pay1">
+                <p><span>商品件数/最大件数</span>(<i class="allchecknum">1</i>/10)</p>
+                <p>共<i class="allchecknum">1</i>个商品&nbsp;总价：<span><i class="allmoney">66.00</i>&nbsp;Q币</span></p>
+            </div>
             <h3 class="m-title">您的优惠信息</h3>
             <p class="yhui">优惠券总量：<span>0</span>&nbsp;&nbsp;<a href="javascript:;">如何获得优惠券&gt;&gt;</a></p>
             <div class="push">
                 <div class="p-left">
                     <p>下载掌上道聚城享更多福利<span><a href="javascript:;">查看详情</a></span></p>
-                    <p class="money-box">实付款:<span>0.00</span>&nbsp;Q币</p>
+                    <p class="money-box">实付款:<span class="allmoney">0.00</span>&nbsp;Q币</p>
                 </div>
                 <div class="p-right">提交订单</div>
             </div>
