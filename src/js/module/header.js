@@ -22,9 +22,11 @@ define(["jquery"],function($){
               });
             //跳转购物车页面
             $("#cart").on("click",() =>{
+                this.user = tools.cookie("user");
                 if(this.user){
                     location.href = "/html/shopcart.html";
                 }else{
+                    $("#cart-num").html("（"+0+"）");
                     if(confirm("您还未登录！是否前往登录？")){
                         this.loginOn();
                     }
