@@ -23,10 +23,12 @@ require(["require.config"],function(){
                 this.check();
                 //全选
                 this.allcheck();
-                //数量编辑
+                //a标签数量编辑
                 this.aEvents();
                 //小计
-                this.subtotal();                
+                this.subtotal();   
+                //input数量编辑
+                this.goodsNumInput();           
 
             }
             // 单选框
@@ -97,6 +99,11 @@ require(["require.config"],function(){
                         numInput.value++;
                         storageNum = numInput.value*1;
                     }
+                    if(target.className.includes("care")){
+                        if(confirm("关注成功！是否立即前往我的关注？")){
+                            location.href = "javascript:;";
+                        }
+                    }
                     if(target.className.includes("del")){
                         let i = 0;
                         if(cart.some(function(item,index){
@@ -133,6 +140,39 @@ require(["require.config"],function(){
                 }) 
                 
             }
+            //input数量编辑
+            goodsNumInput(){
+                let cart = this.cart,
+                    _this = this;
+                    //键盘keyup事件
+                $(".numIput").keyup(function(){
+                    let tr = $(this).get(0).parentNode.parentNode,
+                         data_id = tr.getAttribute("data-id"),
+                         j = 0,
+                         inputNum = Number($(this).val());
+                    if(cart.some(function(item,index){
+                            j = index;
+                            return item.id == data_id;
+                        })){
+                            if(inputNum >= 1){
+                                cart[j].num = inputNum;
+                            }
+                        }
+                    localStorage.setItem("cart",JSON.stringify(cart));
+
+                     _this.subtotal();
+                     _this.calcMoney();
+                })
+                // input框失去焦点事件
+                // $(".numInput").focusout(function(){
+                //     console.log(11111);
+                //     console.log($(this));
+                //     if($(this).val()*1 < 1){
+                //         alert("请输入大于零的数字！");
+                //         $(this).val(1);
+                //     }
+                // })
+            }
             //计算小计
             subtotal(){
                 $(".subtotal").html(function(){
@@ -158,10 +198,10 @@ require(["require.config"],function(){
                     //超出结算上限，谈提示
                     $(".allchecknum").html(goodsnum);
                     if(goodsnum > 10){
-                        alert("已超出最大结算数量！请适当调整！");
+                        alert("已超出最大结算数量10！请适当调整！");
                         $(".p-right").css("background","#666666");
                     }else{
-                        $(".p-right").css("background","#f74a4a");
+                        this.changeCSS();
                     }
                     
             }
