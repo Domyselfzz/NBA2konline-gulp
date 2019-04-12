@@ -28,8 +28,20 @@ require(["require.config"],function(){
                 //小计
                 this.subtotal();   
                 //input数量编辑
-                this.goodsNumInput();           
+                this.goodsNumInput(); 
+                //登录状态
+                this.loginStatus();          
 
+            }
+            //登录状态
+            loginStatus(){
+                // 定时器监测状态
+                setInterval(() =>{
+                    let user = tools.cookie("user");
+                if(!user){
+                    location.href = "/index.html";
+                }
+                },500)   
             }
             // 单选框
             check(){

@@ -11,6 +11,6 @@ require.config({
         "url" : "js/module/url",
         "toprank" : "js/module/top-rank",
         "notice" : "js/module/notice",
-        "history" : "js/module/history"
+        "history" : "js/module/history",
     }
 })

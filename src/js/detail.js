@@ -65,9 +65,16 @@ require(["require.config"],function(){
                     e.preventDefault ? 
 					e.preventDefault() : 
                     window.returnValue = false;
-                    console.log(1111111);
-                    this.addToCart();
-                    header.calcCartNum();
+                    let user = tools.cookie("user");
+                    if(user){
+                        this.addToCart();
+                        header.calcCartNum();
+                    }else{
+                        if(confirm("您未登录是否立即登录？")){
+                            header.loginOn();
+                        }
+                    }
+                    
                 }
             }
             addToCart(){

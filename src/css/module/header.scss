@@ -38,8 +38,8 @@ header{
         }
     }
     ul:nth-of-type(2) {
-        float: right;
-        #loading{display: none;}
+		float: right;
+		.loading{display: none;}
 		li:nth-of-type(4){
 			.gt1{
 				margin-left: 10px;
